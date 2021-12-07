@@ -6,7 +6,7 @@ r = list()
 for x in alpha:
     if x not in beta:
         r.append(x)
-        
+
 for x in beta:
     if x not in alpha:
         r.append(x)

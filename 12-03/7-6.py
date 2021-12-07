@@ -1,29 +1,5 @@
-odd = list()
-even = list()
-
-while True:
-    try:
-        x = input()
-        if x == '':
-            break
-        else:
-            x = int(x)
-        if x % 2 == 0:
-            even.append(x)
-        else:
-            odd.append(x)
-    
-    except EOFError:
-        break
-
-for y in even:
-    if y != even[0]:
-        print("-", end="")
-    print(y, end="")
-
-print()
-
-for y in odd:
-    if y != odd[0]:
-        print("+", end="")
-    print(y, end="")
+lst = input().split(" ")
+len_sum = 0
+for i in lst:
+    len_sum += len(i)
+print(f"{len(lst)},{len_sum/len(lst):.2f}")

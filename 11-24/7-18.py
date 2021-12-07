@@ -1,4 +1,4 @@
-nums = list(map(int, input().split(" ")))   
+nums = list(map(int, input().split(" ")))
 sum = 0
 for x in nums:
     sum += x

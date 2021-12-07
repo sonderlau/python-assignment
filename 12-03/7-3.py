@@ -2,7 +2,7 @@ while True:
     try:
         raw = list(input().split(" "))
 
-        nums = list(map(int , raw[2:]))
+        nums = list(map(int, raw[2:]))
 
         nums.append(int(raw[1]))
 
@@ -15,7 +15,3 @@ while True:
         print()
     except EOFError:
         break
-    
-    
-    
-    

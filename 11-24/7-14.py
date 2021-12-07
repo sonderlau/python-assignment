@@ -8,9 +8,13 @@ for x in nums:
     sum += x
     if x < 60:
         fail += 1
-    
-print("""Max: {}
+
+print(
+    """Max: {}
 Min: {}
 Ave: {}
 Fail: {}
-""".format(max(nums), min(nums), sum/n, fail))
+""".format(
+        max(nums), min(nums), sum / n, fail
+    )
+)

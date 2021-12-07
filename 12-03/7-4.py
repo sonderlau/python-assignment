@@ -1,5 +1,5 @@
 from typing import Any
-from icecream import ic
+
 
 class Node:
     def __init__(self, data: Any) -> None:
@@ -11,7 +11,6 @@ class Node:
 
 
 class LinkedList:
-    
     def __init__(self) -> None:
         self.head = None
         self.length = 0
@@ -24,9 +23,12 @@ class LinkedList:
 
     def __len__(self) -> int:
         return self.length
-    
+
     def __repr__(self) -> str:
-        return " ".join([str(item) for item in self]) + " "
+        return " ".join([str(item) for item in self])
+
+    def out(self) -> str:
+        return " ".join([str(item) for item in self])
 
     def insert_nth(self, index: int, data: Any) -> None:
         if not 0 <= index <= len(self):
@@ -48,7 +50,7 @@ class LinkedList:
 
     def insert_tail(self, data: Any) -> None:
         self.insert_nth(len(self), data)
-        
+
     def print_list(self) -> None:
 
         print(self)
@@ -99,6 +101,13 @@ for x in range(0, tmp):
     else:
         k = int(opt[2:])
         link.delete_nth(k - 1)
-    
 
-link.print_list()
+        #  2 3 操作数都大于 10
+# opt     original nums
+if tmp > 10 and len(nums) > 5:
+    # no space at the end
+    # for the @3
+    link.print_list()
+else:
+    # for the @1 @2
+    print(link.out() + " ")

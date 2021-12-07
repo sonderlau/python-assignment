@@ -1,5 +1,5 @@
-alist=set(map(int,input().split()))
-blist=set(map(int,input().split()))
+alist = set(map(int, input().split()))
+blist = set(map(int, input().split()))
 
 
 alist.update(blist)

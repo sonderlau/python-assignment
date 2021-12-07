@@ -1,5 +1,6 @@
 import collections
-store = collections.defaultdict(lambda: 0 ) 
+
+store = collections.defaultdict(lambda: 0)
 n = int(input())
 
 for i in range(0, n):

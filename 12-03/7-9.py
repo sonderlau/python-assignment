@@ -4,7 +4,7 @@ even = list()
 while True:
     try:
         x = input()
-        if x == '':
+        if x == "":
             break
         else:
             x = int(x)
@@ -12,7 +12,7 @@ while True:
             even.append(x)
         else:
             odd.append(x)
-    
+
     except EOFError:
         break
 

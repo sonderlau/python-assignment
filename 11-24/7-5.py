@@ -1,12 +1,13 @@
 import collections
 import string
+
 alphabets = dict.fromkeys(string.ascii_uppercase, 0)
 words = collections.defaultdict(lambda: 0)
 
 
 while True:
     in_ = input()
-     
+
     if in_ == "0000":
         break
     sentence = list(in_.split(" "))
@@ -14,7 +15,7 @@ while True:
         x = x.upper()
         words[x] += 1
         for i in x:
-            #? 单词不一定由字母组成
+            # ? 单词不一定由字母组成
             if i.isalpha():
                 alphabets[i] += 1
 

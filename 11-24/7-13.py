@@ -11,6 +11,6 @@ for x in nums:
         if x % 1 == 0:
             x = int(x)
         print(x, end="")
-    
+
     if x != nums[-1]:
         print(" ", end="")
