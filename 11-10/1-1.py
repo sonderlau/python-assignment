@@ -1,7 +1,6 @@
-nums = list(map(int, input().split(" ")))
-print(nums)
-print(set(nums))
-flag = len(set(nums)) == len(list(nums))
+nums = list(input().split(" "))
+
+flag = len(list(set(nums))) == len(nums)
 
 if flag:
     print("no")

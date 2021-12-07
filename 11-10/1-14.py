@@ -14,8 +14,8 @@ def fun(n):
 
 n = int(input())
 
-for i,val in enumerate(fun(n + 1)):
-    if i!= 0:
+for i, val in enumerate(fun(n + 1)):
+    if i != 0:
         print(" ", end="")
-    
+
     print(val, end="")
