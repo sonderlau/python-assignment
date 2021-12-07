@@ -1,6 +1,7 @@
 def check_length(num):
     return len(num) <= 5
 
+
 def check_prime(num):
     x = int(num)
     for i in range(2, int(x ** 0.5) + 1):
@@ -8,8 +9,10 @@ def check_prime(num):
             return False
     return True
 
+
 def check_symmetrical(s):
     return list(s) == list(reversed(s))
+
 
 while True:
     try:
@@ -20,5 +23,3 @@ while True:
             print("No")
     except:
         break
-    
-    

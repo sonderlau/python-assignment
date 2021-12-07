@@ -2,9 +2,8 @@ sum = 0
 cnt = 0
 while True:
 
-    
     num = int(input())
-    
+
     if num > 0:
         sum += num
         cnt += 1

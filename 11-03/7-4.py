@@ -5,4 +5,3 @@ if alpha.isalpha():
         print(ord(alpha))
     else:
         print(alpha.upper())
-

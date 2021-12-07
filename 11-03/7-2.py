@@ -7,4 +7,3 @@ for i in range(round):
         sum += int(x)
     sum /= len(nums)
     print("{:.1f}".format(sum))
-
